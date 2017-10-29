@@ -19,7 +19,7 @@ app.use(expressLayouts);
 
 //then use router
 var router = require('./app/routes');
-app.use('/', router);
+app.use(router);
 
 //set static files (css images and javascript etc) location
 app.use(express.static(__dirname + '/public'));
