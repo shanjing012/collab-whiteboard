@@ -1,0 +1,43 @@
+<%- contentFor('body') %>
+<canvas class="whiteboard"></canvas>
+
+<%- contentFor('navBarColor') %>
+<div class="btn-group" role="group">
+	<button type="button" class="btn navbar-btn black" name="color">Black</button>
+	<button type="button" class="btn navbar-btn blue" name="color">Blue</button>
+	<button type="button" class="btn navbar-btn red" name="color">Red</button>
+	<button type="button" class="btn navbar-btn green" name="color">Green</button>
+	<button type="button" class="btn navbar-btn yellow" name="color">Yellow</button>
+</div>
+	<button type="button" class="btn navbar-btn white" name="color">Eraser</button>
+
+<div class="btn-group" role="group">
+	<button type="button" class="btn navbar-btn -" aria-label="Up" name="brushDown">
+		<span class="glyphicon glyphicon-triangle-bottom"></span>
+	</button>
+
+	<button type="button" class="btn navbar-btn disabled" name="brushSize">
+		Brush Size: 2
+	</button>
+
+	<button type="button" class="btn navbar-btn +" aria-label="Down" name="brushUp">
+		<span class="glyphicon glyphicon-triangle-top"></span>
+	</button>
+	
+</div>
+
+
+
+
+<%- contentFor('script') %>
+<script src = "/socket.io/socket.io.js"></script>
+<script>
+	//creates a socket and allows interaction with server
+	var socket = io();
+	//run canvas.js
+</script>
+<script src="/javascript/canvas.js"></script> 
+
+
+
+
