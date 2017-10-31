@@ -111,6 +111,7 @@ function drawLine(x0, y0, x1, y1, color, brushSize, emit){
 	}
 	else
 	{
+		context.lineCap = "round";
 		context.strokeStyle = color;
 		context.moveTo(x0, y0);
 		context.lineTo(x1, y1);
