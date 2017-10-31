@@ -1,4 +1,4 @@
 # shanjing012.github.io
-collab-whiteboard
+https://collab-whiteboard.herokuapp.com/
 
 This is my simple collaborative whiteboard app which I host on heroku!
