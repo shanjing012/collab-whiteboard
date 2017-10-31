@@ -28,7 +28,7 @@ brushDown[0].addEventListener('click', function() {onBrushUpdate(-1)}, false);
 function onBrushUpdate(e){
 	var newBrush = brushS;
 	brushS = brushS + e;
-	if((brushS > 5) || (brushS < 1))
+	if((brushS > 9) || (brushS < 1))
 	{
 		brushS = newBrush;
 	}
@@ -68,6 +68,36 @@ canvas.addEventListener('mouseup', onMouseUp, false);
 canvas.addEventListener('mouseout', onMouseUp, false);
 //when mouse moves around
 canvas.addEventListener('mousemove', throttle(onMouseMove, 5), false);
+
+//for touch events (added to provide compatibility with phones)
+canvas.addEventListener('touchstart', function(e) {
+	e.preventDefault();
+	//create a mouse event with the touch handler
+	var touch = e.touches[0];
+	var mouseEvent = new MouseEvent("mousedown", {
+    	clientX: touch.clientX,
+    	clientY: touch.clientY
+  	});
+	onMouseDown(mouseEvent);
+}, false);
+//for touch events (added to provide compatibility with phones)
+canvas.addEventListener('touchmove', function(e) {
+	e.preventDefault();
+	//create a mouse event with the touch handler
+	var touch = e.touches[0];
+	var mouseEvent = new MouseEvent("mousemove", {
+    	clientX: touch.clientX,
+    	clientY: touch.clientY
+  	});
+	onMouseMove(mouseEvent);
+}, false);
+//for touch events (added to provide compatibility with phones)
+canvas.addEventListener('touchend', function(e) {
+	e.preventDefault();
+	//create a mouse event with the touch handler
+	drawing = false;
+}, false);
+
 
 //draw line method
 function drawLine(x0, y0, x1, y1, color, brushSize, emit){
