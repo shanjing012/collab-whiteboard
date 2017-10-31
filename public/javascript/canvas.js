@@ -44,8 +44,7 @@ function onColorUpdate(e){
 var canvas = document.getElementsByClassName('whiteboard')[0];
 var context = canvas.getContext('2d');
 var drawing = false;
-
-//create white background first
+//draw white bg
 context.fillStyle = 'white';
 context.fillRect(0, 0, canvas.width, canvas.height);
 context.fillStyle = current.color;
@@ -193,6 +192,10 @@ function onResize() {
     	//context.putImageData(imgData, 0, 0);
 	}
 	//draw the scaled image
+	//create white background first
+	context.fillStyle = 'white';
+	context.fillRect(0, 0, canvas.width, canvas.height);
+	context.fillStyle = current.color;
     context.putImageData(imgData, 0, 0);
 }
 
