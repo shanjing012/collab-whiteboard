@@ -1,5 +1,7 @@
 <%- contentFor('body') %>
-<canvas class="whiteboard"></canvas>
+<container>
+<canvas class="whiteboard" width="1024" height="576" background="white"></canvas>
+</container>
 
 <%- contentFor('navBarColor') %>
 <div class="btn-group" role="group">
@@ -23,9 +25,13 @@
 	<button type="button" class="btn navbar-btn +" aria-label="Down" name="brushUp">
 		<span class="glyphicon glyphicon-triangle-top"></span>
 	</button>
-	
 </div>
 
+<div class="btn-group navbar-right" role="group">
+	<a type="button" class="btn navbar-btn btn-success" name="download">
+		Download as JPEG!
+	</a>
+</div>
 
 
 

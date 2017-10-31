@@ -10,7 +10,7 @@ var server = require('http').createServer(app);
 
 //wrap the socket io to intercept connections
 var io = require('socket.io')(server);
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 8080;
 
 //use ejs and express layout first
 var expressLayouts = require('express-ejs-layouts');
