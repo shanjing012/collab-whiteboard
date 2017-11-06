@@ -5,35 +5,36 @@
 
 <%- contentFor('navBarColor') %>
 
-
 <div class="collapse navbar-collapse" id="myNavbar">
-	<button
-	    class="btn navbar-btn jscolor {valueElement:null,value:'000000',zIndex:9999}" name="colourpicker">
-	    Colour
-	</button>
+	<form class="form-inline">
 
-	<button type="button" class="btn navbar-btn white" name="eraser">Eraser</button>
-
-	<div class="btn-group" role="group">
-		<button type="button" class="btn navbar-btn -" aria-label="Up" name="brushDown">
-			<span class="glyphicon glyphicon-triangle-bottom"></span>
+		<button
+		    class="btn navbar-btn jscolor {valueElement:null,value:'0000FF',zIndex:9999}" name="colourpicker">
+		    Choose a Colour!
 		</button>
-		<button type="button" class="btn navbar-btn disabled" name="brushSize">
-			Brush Size: 2
-		</button>
-		<button type="button" class="btn navbar-btn +" aria-label="Down" name="brushUp">
-			<span class="glyphicon glyphicon-triangle-top"></span>
-		</button>
-	</div>
 
-	<div class="btn-group navbar-right" role="group">
-		<a type="button" class="btn navbar-btn btn-success" name="download">
-			Download JPEG!
-		</a>
-	</div>
+		<button type="button" class="btn navbar-btn btn-default" name="eraser">Eraser!</button>
 
+		<div class="btn-group" role="group">
+			<button type="button" class="btn btn-default navbar-btn -" aria-label="Up" name="brushDown">
+				<span class="glyphicon glyphicon-triangle-bottom"></span>
+			</button>
+			<button type="button" class="btn btn-default navbar-btn disabled" name="brushSize">
+				Brush Size: 2
+			</button>
+			<button type="button" class="btn btn-default navbar-btn +" aria-label="Down" name="brushUp">
+				<span class="glyphicon glyphicon-triangle-top"></span>
+			</button>
+		</div>
+
+		<div class="btn-group navbar-right" role="group">
+			<a type="button" class="btn navbar-btn btn-success" name="download">
+				Download JPEG!
+			</a>
+		</div>
+
+	</form>
 </div>
-
 
 
 
