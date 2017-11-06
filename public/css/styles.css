@@ -1,22 +1,18 @@
 head {
-    position: fixed;
+  position: fixed;
 }
 
 body {
   background-color: gray;
-  padding-top: 60px;
 }
 
 .btn-xlarge {
-    padding: 20px 28px;
-    font-size: 24px; //change this to your desired size
-    line-height: normal;
-    -webkit-border-radius: 8px;
-       -moz-border-radius: 8px;
-            border-radius: 8px;
-}
-
-.navbar-default {
+  padding: 20px 28px;
+  font-size: 24px; //change this to your desired size
+  line-height: normal;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
 }
 
 .btn.navbar-btn.black { 
@@ -41,8 +37,10 @@ background-color: #ffbb33;
 }
 
 .whiteboard {
-  padding: 0;
-  margin: auto;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
   display: block;
   position: absolute;
   top: 0;
@@ -50,21 +48,18 @@ background-color: #ffbb33;
   left: 0;
   right: 0;
   background-color: white;
+}
 
+.jumbotron {
+  margin-top: 75px;
+}
+
+.navbar-right {
+  padding-right: 10px;
 }
 
 html {
   position: relative;
   min-height: 100%;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  padding-bottom: 10px;
-  /*width: 100%;*/
-  /* Set the fixed height of the footer here */
-  /*height: 60px;
-  line-height: 60px; /* Vertically center the text there */
-  background-color: black;
+  max-height: 100%;
 }

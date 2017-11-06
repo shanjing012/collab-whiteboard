@@ -4,34 +4,36 @@
 </container>
 
 <%- contentFor('navBarColor') %>
-<div class="btn-group" role="group">
-	<button type="button" class="btn navbar-btn black" name="color">Black</button>
-	<button type="button" class="btn navbar-btn blue" name="color">Blue</button>
-	<button type="button" class="btn navbar-btn red" name="color">Red</button>
-	<button type="button" class="btn navbar-btn green" name="color">Green</button>
-	<button type="button" class="btn navbar-btn yellow" name="color">Yellow</button>
-</div>
-	<button type="button" class="btn navbar-btn white" name="color">Eraser</button>
 
-<div class="btn-group" role="group">
-	<button type="button" class="btn navbar-btn -" aria-label="Up" name="brushDown">
-		<span class="glyphicon glyphicon-triangle-bottom"></span>
+
+<div class="collapse navbar-collapse" id="myNavbar">
+	<button
+	    class="btn navbar-btn jscolor {valueElement:null,value:'000000',zIndex:9999}" name="colourpicker">
+	    Colour
 	</button>
 
-	<button type="button" class="btn navbar-btn disabled" name="brushSize">
-		Brush Size: 2
-	</button>
+	<button type="button" class="btn navbar-btn white" name="eraser">Eraser</button>
 
-	<button type="button" class="btn navbar-btn +" aria-label="Down" name="brushUp">
-		<span class="glyphicon glyphicon-triangle-top"></span>
-	</button>
+	<div class="btn-group" role="group">
+		<button type="button" class="btn navbar-btn -" aria-label="Up" name="brushDown">
+			<span class="glyphicon glyphicon-triangle-bottom"></span>
+		</button>
+		<button type="button" class="btn navbar-btn disabled" name="brushSize">
+			Brush Size: 2
+		</button>
+		<button type="button" class="btn navbar-btn +" aria-label="Down" name="brushUp">
+			<span class="glyphicon glyphicon-triangle-top"></span>
+		</button>
+	</div>
+
+	<div class="btn-group navbar-right" role="group">
+		<a type="button" class="btn navbar-btn btn-success" name="download">
+			Download JPEG!
+		</a>
+	</div>
+
 </div>
 
-<div class="btn-group navbar-right" role="group">
-	<a type="button" class="btn navbar-btn btn-success" name="download">
-		Download as JPEG!
-	</a>
-</div>
 
 
 
@@ -42,8 +44,8 @@
 	var socket = io();
 	//run canvas.js
 </script>
-<script src="/javascript/canvas.js"></script> 
 
-
-
-
+<!-- my canvas javascript-->
+<script src="/javascript/canvas.js"></script>
+<!-- colourpicker -->
+<script src="/javascript/jscolor.js"></script>
