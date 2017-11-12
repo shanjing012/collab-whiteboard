@@ -15,27 +15,6 @@ body {
           border-radius: 8px;
 }
 
-.btn.navbar-btn.black { 
-background-color: #555555;
-color: white;
-}
-
-.btn.navbar-btn.blue {
-background-color: #33b5e5;
-}
-
-.btn.navbar-btn.red {
-background-color: #ff4444; 
-}
-
-.btn.navbar-btn.green {
-background-color: #00C851;
-}
-
-.btn.navbar-btn.yellow {
-background-color: #ffbb33;
-}
-
 .whiteboard {
   margin-top: 50px;
   margin-left: auto;
