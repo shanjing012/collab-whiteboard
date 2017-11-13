@@ -1,32 +1,16 @@
 # shanjing012.github.io
 https://collab-whiteboard.herokuapp.com/
-
 This is my simple collaborative whiteboard app which I host on heroku!
 
-# Final Project Documentation
-GET1033 - Exploring Computational Media Literacy
+# Documentation
+https://github.com/shanjing012/shanjing012.github.io/blob/master/GET1033%20Documentation.docx
+Download this file to view my progress on this project!
 
+# GET1033 - Exploring Computational Media Literacy
 Project Name: Collab-Whiteboard
 
 ## Introduction
-The purpose of my final project is an online collaborative whiteboard which anyone can draw and edit. I decided on this as my final project as I wanted to learn how to create a fully functional website since we learnt a bit about HTML and CSS in one of our tutorials. I also wanted to create something interactive for the user(s), so that the user(s) can interact with my project! For this project, it is created with:
-
-* Node.js
-  * Server framework
-* Express.js
-  * Web Application framework
-* Express-ejs-layouts
-  * Allow reusing of HTML code on the web application
-* Socket.io.js
-  * Allows for communication between server and clients
-* Jscolor.js
-  * A miniature colour picker interface
-* Bootstrap
-  * A toolkit for creating webpages which includes HTML, CSS and JavaScript
-* Github
-  * A version control software that also helps deploy apps on Heroku
-* Heroku
-  * A cloud based web deployment service provider
+The purpose of my final project is an online collaborative whiteboard which anyone can draw and edit. I decided on this as my final project as I wanted to learn how to create a fully functional website since we learnt a bit about HTML and CSS in one of our tutorials. I also wanted to create something interactive for the user(s), so that the user(s) can interact with my project! 
 
 ## Features
 As an online collaborative whiteboard, it includes a few features such as:
