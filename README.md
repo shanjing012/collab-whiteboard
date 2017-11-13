@@ -4,8 +4,9 @@ https://collab-whiteboard.herokuapp.com/
 This is my simple collaborative whiteboard app which I host on heroku!
 
 # Final Project Documentation
-# GET1033: Exploring Computational Media Literacy
-# Project Name: Collab-Whiteboard
+GET1033 - Exploring Computational Media Literacy
+
+Project Name: Collab-Whiteboard
 
 ## Introduction
 The purpose of my final project is an online collaborative whiteboard which anyone can draw and edit. I decided on this as my final project as I wanted to learn how to create a fully functional website since we learnt a bit about HTML and CSS in one of our tutorials. I also wanted to create something interactive for the user(s), so that the user(s) can interact with my project! For this project, it is created with:
