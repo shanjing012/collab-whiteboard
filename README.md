@@ -1,9 +1,11 @@
 # shanjing012.github.io
 https://collab-whiteboard.herokuapp.com/
+
 This is my simple collaborative whiteboard app which I host on heroku!
 
 # Documentation
 https://github.com/shanjing012/shanjing012.github.io/blob/master/GET1033%20Documentation.docx
+
 Download this file to view my progress on this project!
 
 # GET1033 - Exploring Computational Media Literacy
